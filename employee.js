@@ -5,7 +5,10 @@ class Employee {
         this.title = title
         this.manager = manager ?? null
 
+        if (manager) {
+        manager.addEmployee(this)
     }
+}
 }
 
 module.exports = Employee

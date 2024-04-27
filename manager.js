@@ -12,6 +12,10 @@ class Manager extends Employee {
             console.log("Not an employee instance.")
             return;
         }
+        else if (this.manager !== undefined) {
+            this.employees.push(employee)
+            return
+        }
         this.employees.push(employee)
     }
 
